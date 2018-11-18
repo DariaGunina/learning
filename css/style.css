@@ -1,0 +1,252 @@
+body {
+    margin: 0;
+    background-color: #849d8f;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    border: 1px solid red;
+}
+
+/*
+ header
+*/
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    position: relative;
+}
+
+.controls {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo {
+    margin-right: 20px;
+}
+.menu {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+}
+.menu-item {
+    list-style-type: none;
+    margin-right: 25px;
+}
+
+.menu-item:last-child {
+    margin-right: 0;
+}
+
+.user-block-button {
+    margin-right: 10px;
+}
+
+.user-block-button:last-child {
+    margin-right: 0;
+}
+
+.header-info {
+    position: absolute;
+    top: 100%;
+    right: 25px;
+}
+
+/*
+slider
+*/
+.slider-item {
+    display: flex;
+    position: relative;
+}
+
+.slider-image {
+    margin: auto;
+}
+
+.slider-content {
+    position: absolute;
+    bottom: 40px;
+    width: 670px;
+    left: 50%;
+    margin-left: -335px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.text-slider {
+    margin-bottom: 30px;
+}
+
+
+/*
+cards
+*/
+
+.cards {
+    display: flex;
+    padding: 0 25px;
+    justify-content: space-between;
+}
+
+.card {
+    width: 560px;
+    background-color: pink;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card-content {
+    width: 100%;
+}
+/*
+ice-creams
+*/
+.ice-creams {
+    display: flex;
+    padding: 0 25px;
+    justify-content: space-between;
+}
+.ice-cream {
+    width: 270px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+.pic-ice-cream {
+    position: relative;
+}
+.hit {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ice-cream-price {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/*
+about
+*/
+.about {
+    padding: 20px;
+    margin: 25px;
+}
+.about-text-column {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+
+}
+
+.about-text {
+    width: 535px;
+}
+/*
+blog
+*/
+.blog {
+    width: 560px;
+    background-color: pink;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.blog-header {
+    margin: 0;
+}
+
+.mail {
+    width: 560px;
+    background-color: pink;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.mail-form {
+    display: flex;
+    justify-content: space-between;
+}
+.mail-button {
+    width: 100%;
+    margin-right: 10px;
+}
+.mail-send {
+    flex: none;
+}
+/*
+map
+*/
+
+.map {
+    margin-top: 40px;
+    position: relative;
+}
+.map-card {
+    position: absolute;
+    top: 70px;
+    right: 25px;
+    background-color: #fff;
+    width: 300px;
+    padding: 30px 25px;
+}
+.map-card-section {
+    margin-bottom: 30px;
+}
+.map-card-title {
+    margin-bottom: 10px;
+}
+.map-card-text {
+    margin-bottom: 10px;
+}
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px 25px;
+}
+.footer-social {
+    display: flex;
+    justify-content: flex-start;
+}
+.social-btn {
+    margin-right: 10px;
+}
+
+.footer-menu {
+    display: flex;
+}
+.footer-item-link {
+    display: block;
+}
+
+.footer-menu-column {
+    margin-right: 30px;
+}
+
+.footer-text {
+    margin: 0;
+}
