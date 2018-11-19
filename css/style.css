@@ -10,7 +10,6 @@ body {
 .container {
     margin: 0 auto;
     width: 1200px;
-    border: 1px solid red;
 }
 
 /*
@@ -62,8 +61,39 @@ body {
 
 .header-info {
     position: absolute;
+    list-style-type: none;
     top: 100%;
     right: 25px;
+}
+
+/*
+container
+*/
+.container-breadcrumbs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px 10px;
+
+}
+.breadcrumbs {
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+    display: flex;
+    justify-content: space-between;
+
+}
+.breadcrumb {
+    margin-right: 20px;
+}
+
+.breadcrumb-text {
+    margin: 0;
+}
+.catalog-title {
+    margin: 0;
+    margin-left: 25px;
 }
 
 /*
@@ -93,7 +123,25 @@ slider
 .text-slider {
     margin-bottom: 30px;
 }
-
+/*
+form
+*/
+.form-row {
+    margin-left: 25px;
+    margin-top: 20px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+}
+.form-item {
+    margin-right: 15px;
+}
+.form-title {
+    margin-bottom: 5px;
+}
+.form-label {
+    margin-right: 15px;
+}
 
 /*
 cards
@@ -125,11 +173,11 @@ ice-creams
     display: flex;
     padding: 0 25px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .ice-cream {
     width: 270px;
-    margin: 40px 0;
-    flex-wrap: wrap;
+    margin-top: 40px;
 }
 .pic-ice-cream {
     position: relative;
@@ -222,11 +270,28 @@ map
 .map-card-text {
     margin-bottom: 10px;
 }
+/*
+pagination
+*/
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 25px;
+}
+.page-number {
+     margin-right: 15px;
+}
+/*
+footer
+*/
 .main-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 25px 25px;
+    padding: 20px 0;
+    margin: 30px 25px 0;
+    border-top: 1px solid #fff;
+
 }
 .footer-social {
     display: flex;
