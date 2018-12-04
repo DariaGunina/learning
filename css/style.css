@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color: #849d8f;
+    font-family: 'Roboto', sans-serif;
 }
 
 * {
@@ -10,6 +11,7 @@ body {
 .container {
     margin: 0 auto;
     width: 1200px;
+    position: relative;
 }
 
 /*
@@ -21,7 +23,10 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 25px;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .controls {
@@ -46,13 +51,22 @@ body {
     list-style-type: none;
     margin-right: 25px;
 }
-
+.menu-link {
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    font-weight: 700;
+}
 .menu-item:last-child {
     margin-right: 0;
 }
 
 .user-block-button {
     margin-right: 10px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 500;
 }
 
 .user-block-button:last-child {
@@ -64,6 +78,18 @@ body {
     list-style-type: none;
     top: 100%;
     right: 25px;
+}
+.header-info-item {
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+}
+.header-info-item-text {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.header-info-item-phone {
+    font-size: 22px;
 }
 
 /*
@@ -99,18 +125,20 @@ container
 /*
 slider
 */
+.slider {
+    margin-bottom: -280px;
+}
 .slider-item {
-    display: flex;
     position: relative;
 }
 
 .slider-image {
-    margin: auto;
+    width: 100%;
 }
 
 .slider-content {
     position: absolute;
-    bottom: 40px;
+    bottom: 320px;
     width: 670px;
     left: 50%;
     margin-left: -335px;
@@ -122,7 +150,29 @@ slider
 }
 .text-slider {
     margin-bottom: 30px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: center;
 }
+
+.button-nice {
+    background: linear-gradient(180deg, #f26843, #e74b36);
+    box-shadow: 0px 2px 2px 0px rgba(128, 12, 0, 0.7);
+    border-radius: 40px;
+    padding: 20px 40px;
+    font-weight: 700;
+    font-size: 32px;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+}
+.button-card {
+    font-size: 18px;
+    color: #ffffff;
+    padding: 15px 30px 15px 20px;
+}
+
 /*
 form
 */
@@ -155,16 +205,39 @@ cards
 
 .card {
     width: 560px;
-    background-color: pink;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
 }
+.card-strawberry {
+    background-image: url('../images/strawberry.jpg');
+    z-index:10;
+    border-radius: 15px;
+}
+.card-chocolate {
+    background-image: url('../images/chocolate.jpg');
+    z-index:10;
+    border-radius: 15px;
+}
 
 .card-content {
     width: 100%;
+}
+.card-header {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 37px;
+    margin:0;
+}
+.card-text {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+    margin:0;
+    padding-top: 20px;
+    padding-bottom: 50px;
 }
 /*
 ice-creams
@@ -178,9 +251,12 @@ ice-creams
 .ice-cream {
     width: 270px;
     margin-top: 40px;
+    text-decoration: none;
+    text-align: center;
 }
 .pic-ice-cream {
     position: relative;
+    margin-bottom: 15px;
 }
 .hit {
     position: absolute;
@@ -190,8 +266,19 @@ ice-creams
 
 .ice-cream-price {
     position: absolute;
-    bottom: 0;
+    bottom: -25px;
     left: 0;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 45px;
+}
+.ice-cream-descr {
+    font-weight: 500;
+    font-size: 16px;
+    color: #d6deda;
+    display: inline;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 20px;
 }
 
 /*
@@ -200,16 +287,27 @@ about
 .about {
     padding: 20px;
     margin: 25px;
+    background-image: url('../images/wafer.jpg');
+    border-radius: 15px;
 }
 .about-text-column {
     display: flex;
     justify-content: space-between;
     flex-wrap:wrap;
-
 }
 
 .about-text {
     width: 535px;
+}
+.about-header {
+    font-weight: 500;
+    font-size: 24px;
+    color: #323232;
+}
+.about-text {
+    font-weight: 400;
+    font-size: 16px;
+    color: #323232;
 }
 /*
 blog
@@ -221,30 +319,67 @@ blog
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    background-image: url('../images/background-strawberry.jpg');
+    background-position: 18% 38%;
+    border-radius: 15px;
 }
 .blog-header {
     margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    color: #323232;
+}
+.blog-text {
+    font-weight: 700;
+    font-size: 24px;
+    color: #323232;
+    width: 300px;
 }
 
 .mail {
     width: 560px;
     background-color: pink;
-    padding: 30px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    background-image: url('../images/mail.jpg');
+    border-radius: 15px;
+
+
 }
 .mail-form {
     display: flex;
     justify-content: space-between;
+    margin-top: 40px;
 }
 .mail-button {
     width: 100%;
     margin-right: 10px;
+    padding: 15px;
+    font-weight: 400;
+    font-size: 16px;
 }
 .mail-send {
     flex: none;
+    font-size: 18px;
+    color: #fefefe;
+    padding: 15px 30px 15px 20px;
+    font-weight: 700;
+    border-radius: 40px;
 }
+.mail-text {
+    font-weight: 400;
+    font-size: 16px;
+    color: #323232;
+}
+.mail-inner {
+    background-color: #f8f7f4;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+
 /*
 map
 */
