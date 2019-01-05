@@ -9,9 +9,9 @@
   <body>
 
     <div class="container">
-        <header class="main-header">
+        <header class="main-header main-header-absolute">
             <div class="controls">
-                <a class="logo" href="#">
+                <a class="logo" href="index.html">
                     <img class="logo-image" src="images/logo.png" alt="Gllacy Shop">
                 </a>
 
@@ -53,7 +53,7 @@
                         <div class="search-overlay">
                             <div class="search-wrap">
                                 <div class="search-wrap-label">
-                                    <input class="search-cell" type="search" name="q" placeholder="Что ищем?">
+                                    <input class="search-cell" type="search" name="q" placeholder="Что ищем?" autocomplete="off">
                                     <p class="search-text">Что ищем?</p>
                                 </div>
                         </div>
@@ -63,8 +63,14 @@
                     <a class="user-block-button button button-login" href="#">Вход</a>
                     <div class="entrance-overlay">
                         <div class="entrance-wrap">
-                            <input class="entrance-cell entrance-cell-indent" type="entrance" name="q" placeholder="Электронная почта">
-                            <input class="entrance-cell" type="entrance" name="q" placeholder="Пароль">
+                            <div class="entrance-wrap-label">
+                                <input class="entrance-cell entrance-cell-indent" type="entrance" name="q" placeholder="Электронная почта" autocomplete="off">
+                                <p class="entrance-word">Электронная почта</p>
+                            </div>
+                            <div class="entrance-wrap-label">
+                                <input class="entrance-cell" type="entrance" name="q" placeholder="Пароль" autocomplete="off">
+                                <p class="entrance-word">Пароль</p>
+                            </div>
                             <div class="entrance-actions">
                                 <a class="button-nice button-entrance">Вход</a>
                                 <div class="entrance-actions-link">
@@ -121,43 +127,47 @@
             </div>
 
             <div class="ice-creams">
-                <a class="ice-cream ice-cream-orange" href="#">
+                <div class="ice-cream ice-cream-orange" href="#">
                     <div class="pic-ice-cream">
                         <img class="ice-cream-image" src="images/ice-cream-orange.png" alt="Сливочное мороженное с апельсиновым джемом и апельсиновой стружкой."/>
                         <img class="hit" src="images/hit.png" alt="Хит."/>
                         <h2 class="ice-cream-price">310 &#8381;/кг</h2>
                     </div>
                     <p class="ice-cream-descr">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                    <a class="button button-nice button-ice" href="#">Быстрый просмотр</a>
+                </div>
 
-                </a>
-
-                <a class="ice-cream ice-cream-coffee" href="#">
+                <div class="ice-cream ice-cream-coffee" href="#">
                     <div class="pic-ice-cream">
                         <img class="ice-cream-image" src="images/ice-cream-coffe.png" alt="Сливочно-кофейное с кусочками шоколада."/>
                         <img class="hit" src="images/hit.png" alt="Хит."/>
                         <h2 class="ice-cream-price">380 &#8381;/кг</h2>
                     </div>
                     <p class="ice-cream-descr">Сливочно-кофейное с кусочками шоколада</p>
-                </a>
+                    <a class="button button-nice button-ice" href="#">Быстрый просмотр</a>
+                </div>
 
-                <a class="ice-cream strawberry" href="#">
+                <div class="ice-cream strawberry" href="#">
                     <div class="pic-ice-cream">
                         <img class="ice-cream-image" src="images/ice-cream-strawberry.png" alt="Сливочно-клубничное с присыпкой из белого шоколада."/>
                         <img class="hit" src="images/hit.png" alt="Хит."/>
                         <h2 class="ice-cream-price">355 &#8381;/кг</h2>
                     </div>
                     <p class="ice-cream-descr">Сливочно-клубничное с присыпкой из белого шоколада</p>
-                </a>
+                    <a class="button button-nice button-ice" href="#">Быстрый просмотр</a>
+                </div>
 
-                <a class="ice-cream strawberry" href="#">
+                <div class="ice-cream strawberry" href="#">
                     <div class="pic-ice-cream">
                         <img class="ice-cream-image" src="images/ice-cream-brul.png" alt="Сливочное крем-брюле с карамельной подливкой."/>
                         <img class="hit" src="images/hit.png" alt="Хит."/>
                         <h2 class="ice-cream-price">415 &#8381;/кг</h2>
                     </div>
                     <p class="ice-cream-descr">Сливочное крем-брюле с карамельной подливкой</p>
-                </a>
+                    <a class="button button-nice button-ice" href="#">Быстрый просмотр</a>
+                </div>
             </div>
+
             <div class="about">
                 <h2 class="about-header">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного
                     производства на развес</h2>
