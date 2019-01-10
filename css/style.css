@@ -180,6 +180,15 @@ body {
     text-decoration: none;
     vertical-align: middle;
 }
+.user-block-button-active {
+    font-size: 14px;
+    background-color: #f8f7f4;
+    color: #323232;
+    font-weight: 500;
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: middle;
+}
 .search {
     position: relative;
     display: inline-block;
@@ -396,7 +405,8 @@ body {
     margin-right: 5px;
     vertical-align: middle;
 }
-.button-cart:hover:before {
+.button-cart:hover::before,
+.user-block-button-active::before {
     content: "";
     width: 21px;
     height: 20px;
@@ -415,24 +425,28 @@ body {
     display: inline-block;
     margin-right: 5px;
 }
+.basket:hover .basket-wrap {
+    display: block;
+}
 .basket-wrap {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    padding: 15px;
     background-color: #f8f7f4;
     box-shadow: 5px 16px 15px 0px #6b7771;
     width: 540px;
     margin-top: 5px;
     border-radius: 10px;
+    padding: 15px;
+    display: none;
 
 }
+
+
 .basket-sprite {
     width: 11px;
     height: 11px;
     background: url('../images/css_sprites2.png') -98px -94px;
     flex: none;
     margin-right: 15px;
+    cursor: pointer;
 
 }
 .ice-cream-image-basket {
@@ -496,7 +510,12 @@ body {
 .basket-option-decor {
     color: #999999;
 }
-
+.basket-hover {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 30;
+}
 /*
 container
 */
@@ -623,6 +642,7 @@ form
     align-self: flex-start;
     padding: 10px 25px;
     margin-top: 20px;
+    cursor: pointer;
 }
 .form-button:hover {
     background-color: #fbfcfb;
@@ -648,6 +668,7 @@ form
     font-weight: 400;
     color: #ffffff;
     padding: 5px 15px;
+    cursor: pointer;
 }
 .form-range {
     padding: 0px 20px;
@@ -1032,7 +1053,6 @@ footer
 
 }
 .footer-item-link:hover {
-    font-weight: 700;
     color: #ffbc9e;
 }
 .footer-item-link:last-child {
