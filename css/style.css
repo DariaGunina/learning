@@ -417,7 +417,7 @@ body {
 }
 
 .design-cart {
-    padding: 5px 45px 5px 15px;
+    padding: 5px 15px 5px 15px;
 }
 
 .basket {
@@ -535,7 +535,14 @@ container
 
 }
 .breadcrumb {
-    margin-right: 20px;
+    margin-right: 0;
+
+}
+.breadcrumb:not(:last-child)::after {
+    content: "»";
+    color: #ebefed;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .breadcrumb-text {
@@ -640,7 +647,7 @@ form
     color: #ffffff;
     border: 1px solid #ffffff;
     align-self: flex-start;
-    padding: 10px 25px;
+    padding: 10px 45px;
     margin-top: 20px;
     cursor: pointer;
 }
@@ -657,8 +664,49 @@ form
 .form-style {
     background-color: #a1b6ab;
     border-radius: 40px;
-    padding: 5px 15px;
+    padding: 4px 6px;
     display: flex;
+    height: 40px;
+}
+.form-style-slider {
+    background-color: #a1b6ab;
+    border-radius: 40px;
+    padding: 18px;
+
+}
+.form-slider {
+    width: 180px;
+    height: 4px;
+    background-color: #d1dad3;
+    position: relative;
+}
+.form-circle-left {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    top: -8px;
+    left: 10%;
+}
+.form-circle-right {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    top: -8px;
+    left: 60%;
+}
+.form-circle-inside {
+    width: 3px;
+    height: 3px;
+    border-radius: 40px;
+    background-color: #b1b1b1;
+    position: absolute;
+    top: 8px;
+    left: 45%;
+
 }
 .form-style-sorting {
     border: none;
@@ -670,6 +718,7 @@ form
     padding: 5px 15px;
     cursor: pointer;
 }
+
 .form-range {
     padding: 0px 20px;
     margin: 0;
@@ -722,6 +771,7 @@ form
     height: 20px;
     background: url('../images/css_sprites2.png') -54px -94px;
 }
+
 /*
 cards
 */
@@ -1095,4 +1145,23 @@ footer
 }
 .footer-link:hover {
     color: #ffbc9e;
+}
+.page-number {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    width: 25px;
+    height: 25px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page-number:not(.page-number-disabled):hover, .page-number-active {
+    background-color: #ffffff;
+    color: #323232;
+}
+.page-number-disabled {
+    opacity: 0.5;
 }
