@@ -1165,3 +1165,67 @@ footer
 .page-number-disabled {
     opacity: 0.5;
 }
+.hidden {
+    display: none;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(156, 176, 164, 0.5);
+    z-index: 100;
+}
+.popup-body {
+    position: fixed;
+    top: 50%;
+    right: 25%;
+    transform: translate(-50%, -50%);
+    background-color:  #ffffff;
+    padding: 25px;
+    z-index: 110;
+    border-radius: 10px;
+
+}
+.entrence-popup {
+    font-size: 16px;
+    font-weight: 400;
+    color: #999999;
+    display: flex;
+
+}
+.popup-text {
+    font-size: 24px;
+    font-weight: 400;
+    color: #323232;
+    margin-top: 0;
+}
+.popup-box {
+    width: 425px;
+}
+
+.button-popup {
+    float: right;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 25px;
+}
+.entrence-popup-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #999999;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+.button-close {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    background: url(../images/css_sprites2.png) -98px -94px;
+    cursor: pointer;
+    border: 0;
+    top: 35px;
+    right: 25px;
+}
